@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form {
+        display: flex;
+        flex-direction:column;
+        width: 50%;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    button{
+        width: 20%;
+        padding: 5px;
+        margin: auto;
+        margin-bottom: 10px;
+        text-align:center;    
+        } 
+</style>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to my web page I am Esraa Ahmed</h1>
+    </header>
+    <!-- NavBar -->
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Photo -->
+        <img src="./images/download.jpeg" alt="This is the headquarters of Al Arabi Company in October City, Egypt." width="300">
+        <!-- Contact Section  -->
+    <section id="Contact">
+        <h2>Contact Us</h2>
+        <p>If You Have Any Questions or Suggestions, You Can Contact Us, We Will Help You .</p>
+    </section>
+    <!-- Forms -->
+    <form action="/submit" method="POST">
+        <!-- User Name Form -->
+        <label for="username">User Name</label>
+        <input type="text" id="username" name="username" placeholder="Enter Your User Name" required />
+        <!-- <br> -->
+        <!-- Email Form -->
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter Your Email" required />
+        <br>
+        <!-- Password Form -->
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter Your Password" />
+        <br>
+        <!-- Phone Number Form -->
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number" required />
+        <br>
+        <!-- Choose Gender -->
+        <label>Gender :</label>
+        <section id="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="Male" />
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="Female" />
+        </section>
+        <br>
+        <!-- Text Area Box -->
+        <label for="Massage">Massage</label>
+        <textarea placeholder="Leave Your Complaint "></textarea>
+        <br>
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+        <!-- Reset Button -->
+        <button type="reset">Reset</button>
+    </form>
+</main>
+    <footer>
+        <p>&copy;py: Esraa Ahmed 2025</p></footer>
+</body>
+</html>
